@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+    
+    <TextView
+        android:id="@+id/TitreMesContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#3A8EBA"
+        android:textSize="20sp"
+        android:text="Mes contacts" />
+    
+    <ListView 
+        android:id="@+id/listeContact"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" 
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/TitreMesContact" />
+    
+    <TextView
+        android:id="@+id/TitreMesContact2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/listeContact"
+        android:textColor="#3A8EBA"
+        android:textSize="20sp"
+        android:text="Ajouter un contact" />
+    
+    <EditText
+        android:id="@+id/EditContactMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/TitreMesContact2"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginTop="15dp" />
+    
+    <Button
+        android:id="@+id/BtnContactValider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/EditContactMail"
+        android:layout_marginTop="15dp"
+        android:text="Ajouter"
+        android:onClick="Ajouter" />
+
+</RelativeLayout>

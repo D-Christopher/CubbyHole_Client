@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.supinfo.cubbyholeapp.MainActivity" >
+    
+     <item
+        android:id="@+id/menuContact"
+        android:icon="@drawable/ic_action_add_group"
+        android:title="Contact"
+        android:showAsAction="always" />
+     
+     <item
+        android:id="@+id/menuUpload"
+        android:icon="@drawable/ic_action_upload"
+        android:title="Upload"
+        android:showAsAction="always" />
+    
+    <item
+        android:id="@+id/menuRrefresh"
+        android:title="Rafraichir la page" />
+    
+    <item
+        android:id="@+id/menuProfil"
+        android:title="Gestion du profil">
+    </item>
+    
+    <item
+        android:id="@+id/menuIp"
+        android:title="Option serveur">
+    </item>
+    
+    <item
+        android:id="@+id/logout"
+        android:title="Deconnexion">
+    </item>
+
+</menu>
